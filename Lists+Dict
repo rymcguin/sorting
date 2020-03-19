@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 21 13:23:32 2019
+
+@author: mcguiness
+"""
+
+banking = [{'id' : 4376, 'deposit' : 100, 'withdraw' : 500},
+           {'id' : 5379, 'deposit' : 300, 'withdraw' : 75},
+           {'id' : 6473, 'deposit' : 250, 'withdraw' : 100},
+           {'id' : 7128, 'deposit' : 1000, 'withdraw' : 500}]
+print(banking)
+#print one element in the list of dictionaries
+print(banking[3])
+
+for access in banking:
+    print(access['deposit'])
+
+counter = 0
+total = 0
+for access in banking:
+    total = total + access['deposit']
+    counter = counter + 1
+    
+print("Average for deposit", " " , total / counter)
+print(banking[1]['withdraw'])
+
+for access in banking:
+    access['balance'] = access['deposit'] - access['withdraw']
+    
+print(banking)    
+
+for access in banking: 
+    if access['id'] == 5379 or access['id'] == 6473:
+        print(access['withdraw'])
+        
+banking2 = [{'id' : 1234, 'deposit' : [100,50,300,450], 'withdraw' : [50,100,75]},
+            {'id' : 2345, 'deposit' : [300,200], 'withdraw' : [75,100,35]},
+            {'id' : 3456, 'deposit' : [250,500,50,60,100], 'withdraw' : [500,50,75]},
+            {'id' : 4567, 'deposit' : [1000], 'withdraw' : [500,75,50]}]
+print(banking2)
+banking2[3]['deposit'].append(500)
+print(banking2[3])
+
+for transaction in banking2:
+    print(" deposit for ", transaction['id'], " ", transaction['deposit'])

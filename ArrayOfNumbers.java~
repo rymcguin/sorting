@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ArrayOfNumbers{
+  public static void main(String [] args){
+    Scanner scnr = new Scanner(System.in);
+    final int SIZE_ARRAY = 5;
+    double [] scores = new double[SIZE_ARRAY];
+    char [] characters = new char[SIZE_ARRAY];
+    
+    for(int i = 0; i < SIZE_ARRAY; i++){
+      System.out.println(scores[i];
+    }
+    System.out.println("Character values: ");
+    for(int i = 0; i <SIZE_ARRAY; i++){
+      System.out.println(characters[i];
+    }
+  
+ } 
+}

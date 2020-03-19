@@ -1,0 +1,17 @@
+public class Practice2{
+  public static main void(String[]args){
+    int i;
+    int a=1;
+    int [] arrayRand = new int [10];
+    
+    for(i = 0; i<arrayRand.length; i++){
+      arrayRand[i]=a;
+      System.out.print(arrayRand[i] + " ");
+      ++a;
+      
+    }
+    
+    
+    
+  } 
+  }
